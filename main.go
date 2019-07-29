@@ -19,7 +19,7 @@ func main() {
 			Action: func(c *cli.Context) error {
 				file, err := os.OpenFile("functions.php", os.O_APPEND|os.O_WRONLY, 0600)
 				if err != nil {
-					fmt.Errorf("something went wrong opening functions.php")
+					log.Fatal("something went wrong opening functions.php")
 				}
 
 				defer file.Close()
@@ -50,7 +50,7 @@ func main() {
 
 				file, err := os.OpenFile(jsFile, os.O_APPEND|os.O_WRONLY, 0600)
 				if err != nil {
-					fmt.Errorf("something went wrong opening js file")
+					log.Fatal("something went wrong opening js file")
 				}
 
 				defer file.Close()
