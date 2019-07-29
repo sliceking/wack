@@ -10,9 +10,10 @@ Theres a lot of little pieces that take place when making an ajax request into y
 ## Installation
 
 - Make sure you have the latest version of go. You can grab a copy [here](https://golang.org/dl/).
-- `go get github.com/svwielga4/wack` to get a copy locally
-- run `go build` in the newly downloaded directory. It should be `$GOPATH/src/github.com/svwielga4/wack`
-- open up your .bash_profile and add the executable to your path
+- `go get -u github.com/svwielga4/wack` to get a copy with all its dependencies
+- If you're running on a macbook you can probably use the pre built executable
+- If not: run `go build` in the newly downloaded directory. It should be `$GOPATH/src/github.com/svwielga4/wack`
+- open up your .bash_profile and add the executable to your path so you can run it anywhere
 
 
 ## Usage
